@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.open {
+    border-right: 8px solid #16BAC5;
+    color: #16BAC5;
+}
