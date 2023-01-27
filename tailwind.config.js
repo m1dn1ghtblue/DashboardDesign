@@ -11,7 +11,9 @@ module.exports = {
         'dark-grey': '#999999',
         'blue-green': '#16BAC5',
         'orange': '#FB5012',
-      }
+      },
+      fontFamily: {
+      },
   },
   plugins: [],
 }
