@@ -20,7 +20,7 @@ module.exports = {
         },
         gridTemplateColumns: {
             'layout': '256px 1fr',
-            'content-layout': '1fr 400px',
+            'content-layout': '1fr 300px',
         }
       }
   },

@@ -9,7 +9,7 @@
   <link href="./style.css" rel="stylesheet">
 </head>
 
-<body class="bg-grey grid grid-cols-layout grid-rows-layout text-black">
+<body class="bg-grey grid grid-cols-layout grid-rows-layout text-black h-screen">
   <!-- Sidebar -->
   <aside class="col-start-1 col-end-2 row-start-1 row-end-3 h-screen bg-black w-full py-6 flex flex-col justify-start">
 
@@ -89,11 +89,11 @@
   </aside>
 
   <!-- header -->
-  <div class=" col-start-2 col-end-3 row-start-1 row-end-2 h-24 w-full bg-white shadow-md flex items-center py-4 pl-6 pr-12 gap-5">
+  <div class=" col-start-2 col-end-3 row-start-1 row-end-2 h-full w-full bg-white shadow-md flex items-center py-4 pl-6 pr-12 gap-5">
     <!-- user -->
     <div class="flex items-center gap-4">
       <img src="./images/avatar-1.svg" class="w-14 h-14">
-      <span class="user-name text-2xl font-bold">Morgan Oakley</span>
+      <span id="user-name" class="text-2xl font-bold">Morgan Oakley</span>
     </div>
     <!-- divider -->
     <div class="border border-grey h-10"></div>
@@ -113,7 +113,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
           </svg>                 
         </label>
-        <input type="text" id="search" placeholder="Search for project" class="relative -left-10 rounded-full text-dark-grey focus:text-black bg-white px-3 py-1 w-0 duration-700 outline-white outline-2 outline focus:translate-x-9 [&:not(:placeholder-shown)]:translate-x-9 focus:bg-grey [&:not(:placeholder-shown)]:bg-grey focus:outline-blue-green focus:border-none focus:outline focus:outline-2 focus:w-3/4 [&:not(:placeholder-shown)]:w-3/4">
+        <input type="text" id="search" placeholder="Search for project" class="relative -left-10 rounded-full text-dark-grey focus:text-black bg-white px-3 py-1 w-0 duration-500 outline-white outline-2 outline focus:translate-x-9 [&:not(:placeholder-shown)]:translate-x-9 focus:bg-grey [&:not(:placeholder-shown)]:bg-grey focus:outline-blue-green focus:border-none focus:outline focus:outline-2 focus:w-3/4 [&:not(:placeholder-shown)]:w-3/4">
       </form>
     </div>
     
@@ -124,14 +124,75 @@
   </div>
 
   <!-- content -->
-  <section id="content" class="col-start-2 col-end-3 row-start-2 row-end-3 grid grid-cols-content-layout">
+  <section id="content" class="col-start-2 col-end-3 row-start-2 row-end-3 h-full grid grid-cols-content-layout px-6 py-10 gap-6 overflow-scroll">
     <!-- projects -->
-    <div class="col-start-1 col-end-2">
+    <div class="col-start-1 col-end-2 border-black border">
 
     </div>
-    <!-- side content -->
-    <div class="col-start-2 col-end-3">
 
+    <!-- side content -->
+    <div class="col-start-2 col-end-3 flex flex-col gap-8">
+      <!-- announcements -->
+      <div class="flex flex-col gap-4">
+        <h2 class="text-3xl text-black">Announcements</h2>
+        <div class="flex flex-col w-full bg-white rounded-md shadow-md p-6">
+          <!-- announcement 1 -->
+          <div>
+            <h3 class="text-xl mb-2">Site maintenance</h3>
+            <p class="text-dark-grey mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus mauris ultrices eros in cursus turpis massa.</p>
+            <a href="#" class="underline hover:text-blue-green">Read more</a>
+          </div>
+
+          <hr class="border border-grey my-6">
+
+          <!-- announcement 2 -->
+          <div>
+            <h3 class="text-xl mb-2">Privacy Policy update</h3>
+            <p class="text-dark-grey mb-2">Etiam tempor orci eu lobortis elementum nibh tellus molestie nunc. Pharetra et ultrices neque ornare.</p>
+            <a href="#" class="underline hover:text-blue-green">Read more</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- trending -->
+      <div class="flex flex-col gap-4">
+        <h2 class="text-3xl text-black">Trending</h2>
+        <div class="flex flex-col gap-4 w-full bg-white rounded-md shadow-md p-6">
+          <!-- trend 1 -->
+          <div class="flex gap-4 items-start">
+            <img src="./images/avatar-2.svg" alt="" class="w-16 h-16">
+            <div class="flex flex-col gap-0.5">
+              <span id="trend-user-id-1" class="font-bold text-lg">@jamie</span>
+              <p class="text-dark-grey">Massa sed elementum tempus egestas.</p>
+              <a href="#" class="underline text-dark-grey hover:text-blue-green">Read</a>
+            </div>
+          </div>
+          
+          <hr class="border border-grey">
+
+          <!-- trend 2 -->
+          <div class="flex gap-4 items-start">
+            <img src="./images/avatar-3.svg" alt="" class="w-16 h-16">
+            <div class="flex flex-col gap-0.5">
+              <span id="trend-user-id-1" class="font-bold text-lg">@millie</span>
+              <p class="text-dark-grey">Faucibus vitae aliquet nec ullamcorper sit. Quam pellentesque nec nam aliquam sem et.</p>
+              <a href="#" class="underline text-dark-grey hover:text-blue-green">Read</a>
+            </div>
+          </div>
+
+          <hr class="border border-grey">
+
+          <!-- trend 3 -->
+          <div class="flex gap-4 items-start">
+            <img src="./images/avatar-1.svg" alt="" class="w-16 h-16">
+            <div class="flex flex-col gap-0.5">
+              <span id="trend-user-id-1" class="font-bold text-lg">@morgan</span>
+              <p class="text-dark-grey">Diam quis enim lobortis scelerisque fermentum dui faucibus.</p>
+              <a href="#" class="underline text-dark-grey hover:text-blue-green">Read</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </body>
