@@ -9,9 +9,9 @@
   <link href="./style.css" rel="stylesheet">
 </head>
 
-<body class="bg-grey grid grid-cols-layout text-black">
+<body class="bg-grey grid grid-cols-layout grid-rows-layout text-black">
   <!-- Sidebar -->
-  <aside class="col-start-1 col-end-2 h-screen bg-black w-full py-6 flex flex-col justify-start">
+  <aside class="col-start-1 col-end-2 row-start-1 row-end-3 h-screen bg-black w-full py-6 flex flex-col justify-start">
 
     <!-- logo -->
     <div class="flex px-4 gap-2 text-white items-center">
@@ -89,7 +89,7 @@
   </aside>
 
   <!-- header -->
-  <div class=" col-start-2 col-end-3 h-24 w-full bg-white shadow-md flex items-center py-4 pl-6 pr-12 gap-5">
+  <div class=" col-start-2 col-end-3 row-start-1 row-end-2 h-24 w-full bg-white shadow-md flex items-center py-4 pl-6 pr-12 gap-5">
     <!-- user -->
     <div class="flex items-center gap-4">
       <img src="./images/avatar-1.svg" class="w-14 h-14">
@@ -122,5 +122,17 @@
     <button class="rounded-full w-24 bg-blue-green px-4 py-2 font-bold text-white duration-200 hover:bg-black">Upload</button>
     <button class="rounded-full w-24 bg-blue-green px-4 py-2 font-bold text-white duration-200 hover:bg-black">Share</button>
   </div>
+
+  <!-- content -->
+  <section id="content" class="col-start-2 col-end-3 row-start-2 row-end-3 grid grid-cols-content-layout">
+    <!-- projects -->
+    <div class="col-start-1 col-end-2">
+
+    </div>
+    <!-- side content -->
+    <div class="col-start-2 col-end-3">
+
+    </div>
+  </section>
 </body>
 </html>
