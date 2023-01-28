@@ -26,7 +26,7 @@ module.exports = {
             'project-grid': 'repeat(auto-fill, minmax(256px, 1fr))',
         },
         gridAutoRows: {
-            'project-grid': '360px',
+            'project-grid': '400px',
         }
       }
   },
