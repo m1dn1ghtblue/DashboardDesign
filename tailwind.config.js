@@ -13,6 +13,7 @@ module.exports = {
         'orange': '#FB5012',
       },
       fontFamily: {
+        rubik : 'Rubik',
       },
       extend: {
         gridTemplateRows: {
