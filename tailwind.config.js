@@ -10,7 +10,6 @@ module.exports = {
         'grey': '#EEEEEE',
         'dark-grey': '#999999',
         'blue-green': '#16BAC5',
-        'orange': '#FB5012',
       },
       fontFamily: {
         rubik : 'Rubik',
@@ -18,7 +17,7 @@ module.exports = {
       extend: {
         gridTemplateRows: {
             'layout': '96px 1fr',
-            'project-card': '64px 1fr 42px 24px'
+            'project-card': '64px 1fr 36px 24px'
         },
         gridTemplateColumns: {
             'layout': '256px 1fr',
