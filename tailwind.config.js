@@ -18,7 +18,7 @@ module.exports = {
       extend: {
         gridTemplateRows: {
             'layout': '96px 1fr',
-            'project-card': '64px 1fr 24px'
+            'project-card': '64px 1fr 42px 24px'
         },
         gridTemplateColumns: {
             'layout': '256px 1fr',
