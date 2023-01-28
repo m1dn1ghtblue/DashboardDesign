@@ -91,32 +91,33 @@
   </aside>
 
   <!-- header -->
-  <div class=" col-start-2 col-end-3 h-36 w-full bg-white shadow-md grid grid-rows-2 grid-cols-3 py-4 pl-6 pr-16 items-center">
+  <div class=" col-start-2 col-end-3 h-24 w-full bg-white shadow-md flex items-center py-4 pl-6 pr-16 gap-6">
+    <!-- user -->
+    <div class="flex items-center gap-4">
+      <img src="./images/avatar-1.svg" class="w-14 h-14">
+      <span class="user-name text-2xl font-bold">Morgan Oakley</span>
+    </div>
+    <!-- divider -->
+    <div class="border border-blue-green h-10"></div>
+    <!-- bell -->
+    <a href="#" class="text-dark-grey duration-200 hover:text-blue-green">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5" />
+      </svg>
+    </a>
+
     <!-- searchbar -->
-    <div class="col-start-1 col-end-3">
-      <form class="flex gap-3 items-center">
-        <label for="search" class="cursor-pointer">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6">
+    <div class="text-dark-grey grow">
+      <form class="flex gap-3 items-center focus-within:text-blue-green">
+        <label for="search" class="relative cursor-pointer duration-200 hover:text-blue-green z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
           </svg>                 
         </label>
-        <input type="text" id="search" class="rounded-full bg-grey px-3 py-1 w-48 duration-700 outline-white outline-2 outline focus:outline-blue-green focus:border-none focus:outline focus:outline-2 focus:w-2/3 [&:not(:placeholder-shown)]:w-2/3" placeholder="Search">
+        <input type="text" id="search" class="relative -left-10 rounded-full text-dark-grey focus:text-black bg-white px-3 py-1 w-8 duration-700 outline-white outline-2 outline focus:translate-x-9 [&:not(:placeholder-shown)]:translate-x-9 focus:bg-grey [&:not(:placeholder-shown)]:bg-grey focus:outline-blue-green focus:border-none focus:outline focus:outline-2 focus:w-3/4 [&:not(:placeholder-shown)]:w-3/4" placeholder="">
       </form>
     </div>
-
-    <!-- top left menu -->
-    <div class="col-start-3 col-end-4 flex justify-end gap-6 items-center">
-      <!-- bell -->
-      <a href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-7 h-7">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5" />
-        </svg>
-      </a>
-
-      <!-- user -->
-      <img src="./images/avatar-1.svg" class="w-12 h-12">
-      <span class="user-name text-xl font-bold">Morgan Oakley</span>
-    </div>
+      
   </div>
 </body>
 </html>
