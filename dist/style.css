@@ -549,12 +549,24 @@ video {
   grid-row-start: 2;
 }
 
+.row-start-3 {
+  grid-row-start: 3;
+}
+
+.row-start-5 {
+  grid-row-start: 5;
+}
+
 .row-end-3 {
   grid-row-end: 3;
 }
 
 .row-end-2 {
   grid-row-end: 2;
+}
+
+.row-end-4 {
+  grid-row-end: 4;
 }
 
 .my-6 {
@@ -564,6 +576,10 @@ video {
 
 .mt-12 {
   margin-top: 3rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .mb-2 {
@@ -646,6 +662,14 @@ video {
   cursor: pointer;
 }
 
+.auto-rows-project-grid {
+  grid-auto-rows: 360px;
+}
+
+.auto-rows-max {
+  grid-auto-rows: max-content;
+}
+
 .grid-cols-layout {
   grid-template-columns: 256px 1fr;
 }
@@ -654,8 +678,16 @@ video {
   grid-template-columns: 1fr 300px;
 }
 
+.grid-cols-project-grid {
+  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+}
+
 .grid-rows-layout {
   grid-template-rows: 96px 1fr;
+}
+
+.grid-rows-project-card {
+  grid-template-rows: 64px 1fr 24px;
 }
 
 .flex-col {
@@ -757,6 +789,11 @@ video {
 
 .fill-current {
   fill: currentColor;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-6 {

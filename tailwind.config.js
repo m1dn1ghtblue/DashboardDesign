@@ -18,10 +18,15 @@ module.exports = {
       extend: {
         gridTemplateRows: {
             'layout': '96px 1fr',
+            'project-card': '64px 1fr 24px'
         },
         gridTemplateColumns: {
             'layout': '256px 1fr',
             'content-layout': '1fr 300px',
+            'project-grid': 'repeat(auto-fill, minmax(256px, 1fr))',
+        },
+        gridAutoRows: {
+            'project-grid': '360px',
         }
       }
   },
