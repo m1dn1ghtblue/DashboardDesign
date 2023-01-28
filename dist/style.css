@@ -853,6 +853,11 @@ video {
   color: rgb(153 153 153 / var(--tw-text-opacity));
 }
 
+.text-blue-green {
+  --tw-text-opacity: 1;
+  color: rgb(22 186 197 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -902,6 +907,11 @@ video {
 .hover\:text-blue-green:hover {
   --tw-text-opacity: 1;
   color: rgb(22 186 197 / var(--tw-text-opacity));
+}
+
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(30 30 36 / var(--tw-text-opacity));
 }
 
 .focus\:w-3\/4:focus {
