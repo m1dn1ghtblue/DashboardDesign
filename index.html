@@ -10,9 +10,10 @@
 
   <title>Dashboard</title>
   <link href="./style.css" rel="stylesheet">
+  <script src="./script.js" defer></script>
 </head>
 
-<body class="bg-grey grid grid-cols-layout grid-rows-layout text-black h-screen font-rubik">
+<body class="bg-grey dark:bg-dark-70 grid grid-cols-layout grid-rows-layout text-black dark:text-white h-screen font-rubik">
   <!-- Sidebar -->
   <aside class="col-start-1 col-end-2 row-start-1 row-end-3 h-screen bg-black w-full py-6 flex flex-col justify-start">
 
@@ -92,14 +93,14 @@
   </aside>
 
   <!-- header -->
-  <div class=" col-start-2 col-end-3 row-start-1 row-end-2 h-full w-full bg-white shadow-md flex items-center py-4 pl-6 pr-12 gap-3 z-10">
+  <div class=" col-start-2 col-end-3 row-start-1 row-end-2 h-full w-full bg-white dark:bg-dark-90 shadow-md flex items-center py-4 pl-6 pr-12 gap-3 z-10">
     <!-- user -->
     <div class="flex items-center gap-4">
       <img src="./images/avatar-1.svg" class="w-14 h-14">
-      <span id="user-name" class="text-2xl font-bold">Morgan Oakley</span>
+      <span id="user-name" class="text-2xl font-bold dark:text-grey">Morgan Oakley</span>
     </div>
     <!-- divider -->
-    <div class="border border-grey h-10"></div>
+    <div class="border border-grey dark:border-dark-70 h-10"></div>
     <!-- bell -->
     <a href="#" class="text-dark-grey duration-200 hover:text-blue-green">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
@@ -108,7 +109,7 @@
     </a>
     
     <!-- divider -->
-    <div class="border border-grey h-10"></div>
+    <div class="border border-grey dark:border-dark-70 h-10"></div>
 
     <!-- dark mode button -->
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" id="dark-mode-btn" class="w-6 h-6 text-dark-grey duration-200 hover:text-blue-green cursor-pointer">
@@ -116,7 +117,7 @@
     </svg>
     
     <!-- divider -->
-    <div class="border border-grey h-10"></div>
+    <div class="border border-grey dark:border-dark-70 h-10"></div>
 
     <!-- searchbar -->
     <div class="text-dark-grey grow">
@@ -126,25 +127,25 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
           </svg>                 
         </label>
-        <input type="text" id="search" placeholder="Search for project" class="relative -left-10 rounded-full text-dark-grey focus:text-black bg-white px-3 py-1 w-0 duration-500 outline-white outline-2 outline focus:translate-x-9 [&:not(:placeholder-shown)]:translate-x-9 focus:bg-grey [&:not(:placeholder-shown)]:bg-grey focus:outline-blue-green focus:border-none focus:outline focus:outline-2 focus:w-3/4 [&:not(:placeholder-shown)]:w-3/4">
+        <input type="text" id="search" placeholder="Search for project" class="relative -left-10 rounded-full text-dark-grey dark:text-dark-0 focus:text-black dark:focus:text-grey bg-white dark:bg-dark-90 px-3 py-1 w-0 duration-500 outline-white dark:outline-dark-90 outline-2 outline focus:translate-x-9 [&:not(:placeholder-shown)]:translate-x-9 focus:bg-grey focus:dark:bg-dark-70 [&:not(:placeholder-shown)]:bg-grey dark:[&:not(:placeholder-shown)]:bg-dark-70 focus:outline-blue-green dark:focus:outline-blue-green focus:border-none focus:outline focus:outline-2 focus:w-3/4 [&:not(:placeholder-shown)]:w-3/4">
       </form>
     </div>
     
     <!-- buttons -->
-    <button class="rounded-full w-24 bg-blue-green px-4 py-2 font-bold text-white duration-200 hover:bg-black">New</button>
-    <button class="rounded-full w-24 bg-blue-green px-4 py-2 font-bold text-white duration-200 hover:bg-black">Upload</button>
-    <button class="rounded-full w-24 bg-blue-green px-4 py-2 font-bold text-white duration-200 hover:bg-black">Share</button>
+    <button class="rounded-full w-24 bg-blue-green dark:bg-dark-50 px-4 py-2 font-bold text-white duration-200 hover:bg-black dark:hover:bg-blue-green">New</button>
+    <button class="rounded-full w-24 bg-blue-green dark:bg-dark-50 px-4 py-2 font-bold text-white duration-200 hover:bg-black dark:hover:bg-blue-green">Upload</button>
+    <button class="rounded-full w-24 bg-blue-green dark:bg-dark-50 px-4 py-2 font-bold text-white duration-200 hover:bg-black dark:hover:bg-blue-green">Share</button>
   </div>
 
   <!-- content -->
   <section id="content" class="col-start-2 col-end-3 row-start-2 row-end-3 h-full grid grid-cols-content-layout px-6 py-6 gap-6 overflow-scroll">
     <!-- projects -->
     <section class="col-start-1 col-end-2 flex flex-col gap-8">
-      <h2 class="text-3xl text-black">Your projects</h2>
+      <h2 class="text-3xl text-black dark:text-dark-0">Your projects</h2>
       <!-- projects grid -->
       <div class="grid grid-cols-project-grid gap-6 auto-rows-project-grid grow">
         <!-- project card 1-->
-        <div class="grid grid-rows-project-card gap-4 h-full w-full bg-white rounded-md shadow-md p-6 duration-300 cursor-pointer outline outline-transparent outline-2 hover:outline-blue-green hover:shadow-xl hover:-translate-y-1">
+        <div class="grid grid-rows-project-card gap-4 h-full w-full bg-white dark:bg-dark-90 rounded-md shadow-md p-6 duration-300 cursor-pointer outline outline-transparent outline-2 hover:outline-blue-green hover:shadow-xl hover:-translate-y-1">
           <img src="./images/placeholder-1.jpg" alt="" class="w-full h-16 object-cover rounded-md row-start-1 row-end-2">
           <div class="row-start-2 row-end-3 overflow-scroll pr-4">
             <h2 class="text-2xl mb-1">Rosa</h2>
@@ -157,7 +158,7 @@
               <span class="text-base font-medium text-dark-grey">Progress</span>
               <span class="text-sm font-medium text-dark-grey">82%</span>
             </div>
-            <div class="w-full bg-grey rounded-full h-2">
+            <div class="w-full bg-grey dark:bg-dark-70 rounded-full h-2">
               <div class="bg-blue-green h-2 rounded-full" style="width: 82%"></div>
             </div>
           </div>
@@ -183,7 +184,7 @@
         </div>
 
         <!-- project card 2-->
-        <div class="grid grid-rows-project-card gap-4 h-full w-full bg-white rounded-md shadow-md p-6 duration-300 cursor-pointer outline outline-2 outline-transparent hover:outline-blue-green hover:shadow-xl hover:-translate-y-1">
+        <div class="grid grid-rows-project-card gap-4 h-full w-full bg-white dark:bg-dark-90 rounded-md shadow-md p-6 duration-300 cursor-pointer outline outline-2 outline-transparent hover:outline-blue-green hover:shadow-xl hover:-translate-y-1">
           <img src="./images/placeholder-2.jpg" alt="" class="w-full h-16 object-cover rounded-md row-start-1 row-end-2">
           <div class="row-start-2 row-end-3 overflow-scroll pr-4">
             <h2 class="text-2xl mb-1">Lilum</h2>
@@ -196,7 +197,7 @@
               <span class="text-base font-medium text-dark-grey">Progress</span>
               <span class="text-sm font-medium text-dark-grey">17%</span>
             </div>
-            <div class="w-full bg-grey rounded-full h-2">
+            <div class="w-full bg-grey dark:bg-dark-70 rounded-full h-2">
               <div class="bg-blue-green h-2 rounded-full" style="width: 17%"></div>
             </div>
           </div>
@@ -222,7 +223,7 @@
         </div>
         
         <!-- project card 3 -->
-        <div class="grid grid-rows-project-card gap-4 h-full w-full bg-white rounded-md shadow-md p-6 duration-300 cursor-pointer outline-transparent outline outline-2 hover:outline-blue-green hover:shadow-xl hover:-translate-y-1">
+        <div class="grid grid-rows-project-card gap-4 h-full w-full bg-white dark:bg-dark-90 rounded-md shadow-md p-6 duration-300 cursor-pointer outline-transparent outline outline-2 hover:outline-blue-green hover:shadow-xl hover:-translate-y-1">
           <img src="./images/placeholder-3.jpg" alt="" class="w-full h-16 object-cover rounded-md row-start-1 row-end-2">
           <div class="row-start-2 row-end-3 overflow-scroll pr-4">
             <h2 class="text-2xl mb-1">Tulipa</h2>
@@ -235,7 +236,7 @@
               <span class="text-base font-medium text-dark-grey">Progress</span>
               <span class="text-sm font-medium text-dark-grey">22%</span>
             </div>
-            <div class="w-full bg-grey rounded-full h-2">
+            <div class="w-full bg-grey dark:bg-dark-70 rounded-full h-2">
               <div class="bg-blue-green h-2 rounded-full" style="width: 22%"></div>
             </div>
           </div>
@@ -261,7 +262,7 @@
         </div>
 
         <!-- project card 4 -->
-        <div class="grid grid-rows-project-card gap-4 h-full w-full bg-white rounded-md shadow-md p-6 duration-300 cursor-pointer outline-transparent outline outline-2 hover:outline-blue-green hover:shadow-xl hover:-translate-y-1">
+        <div class="grid grid-rows-project-card gap-4 h-full w-full bg-white dark:bg-dark-90 rounded-md shadow-md p-6 duration-300 cursor-pointer outline-transparent outline outline-2 hover:outline-blue-green hover:shadow-xl hover:-translate-y-1">
           <img src="./images/placeholder-4.jpg" alt="" class="w-full h-16 object-cover rounded-md row-start-1 row-end-2">
           <div class="row-start-2 row-end-3 overflow-scroll pr-4">
             <h2 class="text-2xl mb-1">Phalaenopsis</h2>
@@ -274,7 +275,7 @@
               <span class="text-base font-medium text-dark-grey">Progress</span>
               <span class="text-sm font-medium text-dark-grey">100%</span>
             </div>
-            <div class="w-full bg-grey rounded-full h-2">
+            <div class="w-full bg-grey dark:bg-dark-70 rounded-full h-2">
               <div class="bg-blue-green h-2 rounded-full" style="width: 100%"></div>
             </div>
           </div>
@@ -300,7 +301,7 @@
         </div>
 
         <!-- project card 5 -->
-        <div class="grid grid-rows-project-card gap-4 h-full w-full bg-white rounded-md shadow-md p-6 duration-300 cursor-pointer outline-transparent outline outline-2 hover:outline-blue-green hover:shadow-xl hover:-translate-y-1">
+        <div class="grid grid-rows-project-card gap-4 h-full w-full bg-white dark:bg-dark-90 rounded-md shadow-md p-6 duration-300 cursor-pointer outline-transparent outline outline-2 hover:outline-blue-green hover:shadow-xl hover:-translate-y-1">
           <img src="./images/placeholder-5.jpg" alt="" class="w-full h-16 object-cover rounded-md row-start-1 row-end-2">
           <div class="row-start-2 row-end-3 overflow-scroll pr-4">
             <h2 class="text-2xl mb-1">Hyacinthus</h2>
@@ -313,7 +314,7 @@
               <span class="text-base font-medium text-dark-grey">Progress</span>
               <span class="text-sm font-medium text-dark-grey">0%</span>
             </div>
-            <div class="w-full bg-grey rounded-full h-2">
+            <div class="w-full bg-grey dark:bg-dark-70 rounded-full h-2">
               <div class="bg-blue-green h-2 rounded-full" style="width: 0%"></div>
             </div>
           </div>
@@ -339,7 +340,7 @@
         </div>
 
         <!-- project card 6 -->
-        <div class="grid grid-rows-project-card gap-4 h-full w-full bg-white rounded-md shadow-md p-6 duration-300 cursor-pointer outline-transparent outline outline-2 hover:outline-blue-green hover:shadow-xl hover:-translate-y-1">
+        <div class="grid grid-rows-project-card gap-4 h-full w-full bg-white dark:bg-dark-90 rounded-md shadow-md p-6 duration-300 cursor-pointer outline-transparent outline outline-2 hover:outline-blue-green hover:shadow-xl hover:-translate-y-1">
           <img src="./images/placeholder-6.jpg" alt="" class="w-full h-16 object-cover rounded-md row-start-1 row-end-2">
           <div class="row-start-2 row-end-3 overflow-scroll pr-4">
             <h2 class="text-2xl mb-1">Alstroemeria</h2>
@@ -352,7 +353,7 @@
               <span class="text-base font-medium text-dark-grey">Progress</span>
               <span class="text-sm font-medium text-dark-grey">64%</span>
             </div>
-            <div class="w-full bg-grey rounded-full h-2">
+            <div class="w-full bg-grey dark:bg-dark-70 rounded-full h-2">
               <div class="bg-blue-green h-2 rounded-full" style="width: 64%"></div>
             </div>
           </div>
@@ -378,7 +379,7 @@
         </div>
 
         <!-- new project card -->
-        <div class="flex flex-col justify-center items-center gap-2 h-full w-full rounded-md border-dashed border-4 border-dark-grey text-dark-grey cursor-pointer duration-300 opacity-40 hover:border-black hover:text-black">
+        <div class="flex flex-col justify-center items-center gap-2 h-full w-full rounded-md border-dashed border-4 border-dark-grey text-dark-grey cursor-pointer duration-300 opacity-40 hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-16 h-16">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
@@ -391,61 +392,61 @@
     <section class="col-start-2 col-end-3 flex flex-col gap-8">
       <!-- announcements -->
       <div class="flex flex-col gap-4">
-        <h2 class="text-3xl text-black">Announcements</h2>
-        <div class="flex flex-col w-full bg-white rounded-md shadow-md p-6">
+        <h2 class="text-3xl text-black dark:text-dark-0">Announcements</h2>
+        <div class="flex flex-col w-full bg-white dark:bg-dark-60 rounded-md shadow-md p-6">
           <!-- announcement 1 -->
           <div>
             <h3 class="text-xl mb-2">Site maintenance</h3>
-            <p class="text-dark-grey mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus mauris ultrices eros in cursus turpis massa.</p>
-            <a href="#" class="underline text-blue-green hover:text-black">More</a>
+            <p class="text-dark-grey dark:text-dark-0 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus mauris ultrices eros in cursus turpis massa.</p>
+            <a href="#" class="underline text-blue-green hover:text-black dark:hover:text-grey">More</a>
           </div>
 
-          <hr class="border border-grey my-6">
+          <hr class="border border-grey dark:border-dark-40 my-6">
 
           <!-- announcement 2 -->
           <div>
             <h3 class="text-xl mb-2">Privacy Policy update</h3>
-            <p class="text-dark-grey mb-2">Etiam tempor orci eu lobortis elementum nibh tellus molestie nunc. Pharetra et ultrices neque ornare.</p>
-            <a href="#" class="underline text-blue-green hover:text-black">More</a>
+            <p class="text-dark-grey dark:text-dark-0 mb-2">Etiam tempor orci eu lobortis elementum nibh tellus molestie nunc. Pharetra et ultrices neque ornare.</p>
+            <a href="#" class="underline text-blue-green hover:text-black dark:hover:text-grey">More</a>
           </div>
         </div>
       </div>
 
       <!-- trending -->
       <div class="flex flex-col gap-4">
-        <h2 class="text-3xl text-black">Trending</h2>
-        <div class="flex flex-col gap-4 w-full bg-white rounded-md shadow-md p-6">
+        <h2 class="text-3xl text-black dark:text-dark-0">Trending</h2>
+        <div class="flex flex-col gap-4 w-full bg-white dark:bg-dark-60 rounded-md shadow-md p-6">
           <!-- trend 1 -->
           <div class="flex gap-4 items-start">
             <img src="./images/avatar-2.svg" alt="" class="w-16 h-16">
             <div class="flex flex-col gap-0.5">
               <span id="trend-user-id-1" class="font-bold text-lg">@bob</span>
-              <p class="text-dark-grey">Massa sed elementum tempus egestas.</p>
-              <a href="#" class="underline text-blue-green hover:text-black ">Read</a>
+              <p class="text-dark-grey dark:text-dark-0">Massa sed elementum tempus egestas.</p>
+              <a href="#" class="underline text-blue-green dark:text-white hover:text-black dark:hover:text-blue-green">Read</a>
             </div>
           </div>
           
-          <hr class="border border-grey">
+          <hr class="border border-grey dark:border-dark-40">
 
           <!-- trend 2 -->
           <div class="flex gap-4 items-start">
             <img src="./images/avatar-3.svg" alt="" class="w-16 h-16">
             <div class="flex flex-col gap-0.5">
               <span id="trend-user-id-1" class="font-bold text-lg">@alice</span>
-              <p class="text-dark-grey">Faucibus vitae aliquet nec ullamcorper sit. Quam pellentesque nec nam aliquam sem et.</p>
-              <a href="#" class="underline text-blue-green hover:text-black">Read</a>
+              <p class="text-dark-grey dark:text-dark-0">Faucibus vitae aliquet nec ullamcorper sit. Quam pellentesque nec nam aliquam sem et.</p>
+              <a href="#" class="underline text-blue-green dark:text-white hover:text-black dark:hover:text-blue-green">Read</a>
             </div>
           </div>
 
-          <hr class="border border-grey">
+          <hr class="border border-grey dark:border-dark-40">
 
           <!-- trend 3 -->
           <div class="flex gap-4 items-start">
             <img src="./images/avatar-1.svg" alt="" class="w-16 h-16">
             <div class="flex flex-col gap-0.5">
               <span id="trend-user-id-1" class="font-bold text-lg">@morgan</span>
-              <p class="text-dark-grey">Diam quis enim lobortis scelerisque fermentum dui faucibus.</p>
-              <a href="#" class="underline text-blue-green hover:text-black">Read</a>
+              <p class="text-dark-grey dark:text-dark-0">Diam quis enim lobortis scelerisque fermentum dui faucibus.</p>
+              <a href="#" class="underline text-blue-green dark:text-white hover:text-black dark:hover:text-blue-green">Read</a>
             </div>
           </div>
         </div>
